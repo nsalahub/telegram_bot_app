@@ -58,7 +58,6 @@ public class CityServiceImpl implements CityService {
         cityRepository.merge(city);
     }
 
-
     @Override
     @Transactional
     public CityDTO findByTitle(String title) {
