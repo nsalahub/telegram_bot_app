@@ -1,0 +1,14 @@
+mvnw
+mvnw.cmd
+HELP.md
+*/.idea
+*.iml
+*.iws
+*.ipr
+**/target
+/.idea/
+/.mvn/
+
+# Maven
+**/log/
+**/target/
