@@ -8,6 +8,7 @@ HELP.md
 **/target
 /.idea/
 /.mvn/
+/logs
 
 # Maven
 **/log/

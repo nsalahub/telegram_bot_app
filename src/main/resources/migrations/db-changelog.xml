@@ -1,0 +1,25 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+    <changeSet author="nikolay.salahub@gmail.com" id="CREATE_CITY_TABLE_CHANGE_SET">
+        <createTable tableName="City">
+            <column autoIncrement="true" name="c_id" type="BIGINT">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="c_title" type="varchar(60)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="c_description" type="varchar(200) ">
+                <constraints nullable="false" />
+            </column>
+            <column name="c_deleted" type="Boolean" defaultValue="false">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>
+
+
