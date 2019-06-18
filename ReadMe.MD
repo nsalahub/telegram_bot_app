@@ -7,7 +7,13 @@ _____________
 The application uses MySQL database
 
 To start, you must create a database called "telegram". 
-Then you need to start the application and liqubase will create the table you need to work.
+Then you need to start the application and liquibase will create the table you need to work.
+
+
+If you enter a command  "/show" bot 
+will give you a list of all available cities.
+If the list is empty. 
+You can add a city and its description using REST APT
 
 Valid json: 
 =====
